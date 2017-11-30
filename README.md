@@ -5,10 +5,6 @@
 
 ---
 
-Camomile UI is a UI library for [camomile](https://github.com/camomile-project).
-
----
-
 ## Npm scripts
 
 ```bash
