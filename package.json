@@ -11,7 +11,10 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "keywords": ["camomile", "ui"],
+  "keywords": [
+    "camomile",
+    "ui"
+  ],
   "author": "francoisromain@gmail.com",
   "license": "MIT",
   "devDependencies": {
@@ -23,6 +26,7 @@
     "cross-env": "^5.1.1",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.5",
+    "uglifyjs-webpack-plugin": "^1.1.1",
     "vue": "^2.5.9",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^13.5.0",
