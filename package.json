@@ -2,7 +2,11 @@
   "name": "camomile-ui-boilerplate",
   "version": "0.1.0",
   "description": "A boilerplate project to use Camomile UI",
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francoisromain/camomile-ui-boilerplate.git"
+  },
+  "main": "index.html",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -14,7 +18,7 @@
     "@babel/core": "^7.0.0-beta.32",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.32",
     "@babel/preset-env": "^7.0.0-beta.32",
-    "@camomile/camomile-ui": "^0.1.0",
+    "@camomile/camomile-ui": "^0.1.1",
     "babel-loader": "^8.0.0-beta.0",
     "cross-env": "^5.1.1",
     "css-loader": "^0.28.7",
