@@ -1,17 +1,17 @@
 <template>
   <div>
-    <cml-app></cml-app>
+    <cml-ui></cml-ui>
   </div>
 </template>
 
 <script>
-import cmlApp from '../camomile-ui.esm.js'
+import cmlUi from 'camomile-ui'
 
 export default {
   name: 'my-app',
 
   components: {
-    cmlApp
+    cmlUi
   }
 }
 </script>
