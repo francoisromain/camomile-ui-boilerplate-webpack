@@ -1,30 +1,68 @@
 <template>
-  <cml-app>
-    <div  class="container pt">
+  <cml-app
+    user-name="root"
+    user-password="roO7p4s5wOrD"
+    url="http://localhost:3000"
+    title="Camomile UI">
+    <div class="container pt">
       
       <div class="blobs">
-        <cml-users class="blob-1-2 p border"></cml-users>
-        <cml-groups class="blob-1-2 p border"></cml-groups>
+        <cml-admin-users class="blob-1-2 p bg-bg" />
+        <cml-admin-groups class="blob-1-2 p bg-bg" />
       </div>
+
+      <cml-corpus />
+      <cml-medias />
+      <cml-layers />
+      <cml-annotations />
       
       <div class="blobs">
-        <cml-corpus class="blob-1-2 p border"></cml-corpus>
-        <cml-medias class="blob-1-2 p border"></cml-medias>
-        <cml-layers class="blob-1-2 p border"></cml-layers>
-        <cml-annotations class="blob-1-2 p border"></cml-annotations>
+        <cml-corpus-list class="blob-1-2 p bg-bg" />
+        <cml-medias-list class="blob-1-2 p bg-bg" />
+        <cml-layers-list class="blob-1-2 p bg-bg" />
+        <cml-annotations-list class="blob-1-2 p bg-bg" />
       </div>
 
-      <cml-annotations-buttons class="mb"></cml-annotations-buttons>
-      <cml-annotations-timeline class="mb"></cml-annotations-timeline>
-      <cml-medias-controller class="mb"></cml-medias-controller>
-      <cml-medias-youtube class="mb"></cml-medias-youtube>
-      <cml-medias-videozoning class="mb"></cml-medias-videozoning>
+      <div class="blobs">
+        <cml-layers-add class="blob-1-4 p bg-bg" />
+        <cml-annotations-buttons class="blob-1-2 p bg-bg" />
+        <cml-annotations-edit class="blob-1-4 p bg-bg" />
+      </div>
+
+      <cml-annotations-timeline class="mb" />
+      <cml-medias-controller class="mb" />
+      <cml-annotations-zoning class="mb">
+        <cml-medias-video />
+      </cml-annotations-zoning>
 
       <div class="blobs">
-        <cml-corpus class="blob-1-2 p border" uid="test"></cml-corpus>
-        <cml-medias class="blob-1-2 p border" uid="test"></cml-medias>
-        <cml-layers class="blob-1-2 p border" uid="test"></cml-layers>
-        <cml-annotations class="blob-1-2 p border" uid="test"></cml-annotations>
+        <cml-corpus
+          uid="test-corpus" />
+        <cml-medias
+          corpus-uid="test-corpus"
+          uid="test-media" />
+        <cml-layers
+          corpus-uid="test-corpus"
+          uid="test-layers" />
+        <cml-annotations
+          media-uid="test-media"
+          layers-uid="test-layers"
+          uid="test-annotations" />
+      </div>
+
+      <div class="blobs">
+        <cml-corpus-list
+          class="blob-1-2 p bg-bg" 
+          uid="test-corpus" />
+        <cml-medias-list
+          class="blob-1-2 p bg-bg"
+          uid="test-media" />
+        <cml-layers-list
+          class="blob-1-2 p bg-bg" 
+          uid="test-layers" />
+        <cml-annotations-list
+          class="blob-1-2 p bg-bg" 
+          uid="test-annotations" />
       </div>
 
     </div>
@@ -34,36 +72,48 @@
 <script>
 import {
   cmlApp,
-  cmlUsers,
-  cmlGroups,
+  cmlAdminUsers,
+  cmlAdminGroups,
   cmlCorpus,
+  cmlCorpusList,
   cmlMedias,
-  cmlLayers,
-  cmlAnnotations,
+  cmlMediasList,
   cmlMediasYoutube,
   cmlMediasVideo,
-  cmlMediasVideozoning,
   cmlMediasController,
+  cmlLayers,
+  cmlLayersList,
+  cmlLayersAdd,
+  cmlAnnotations,
+  cmlAnnotationsList,
   cmlAnnotationsButtons,
-  cmlAnnotationsTimeline
+  cmlAnnotationsTimeline,
+  cmlAnnotationsEdit,
+  cmlAnnotationsZoning
 } from 'camomile-ui'
 
 export default {
-  name: 'my-app',
+  name: 'MyApp',
   components: {
     cmlApp,
-    cmlUsers,
-    cmlGroups,
+    cmlAdminUsers,
+    cmlAdminGroups,
     cmlCorpus,
+    cmlCorpusList,
     cmlMedias,
-    cmlLayers,
-    cmlAnnotations,
+    cmlMediasList,
     cmlMediasYoutube,
     cmlMediasVideo,
-    cmlMediasVideozoning,
     cmlMediasController,
+    cmlLayers,
+    cmlLayersList,
+    cmlLayersAdd,
+    cmlAnnotations,
+    cmlAnnotationsList,
     cmlAnnotationsButtons,
-    cmlAnnotationsTimeline
+    cmlAnnotationsTimeline,
+    cmlAnnotationsEdit,
+    cmlAnnotationsZoning
   }
 }
 </script>

@@ -8,13 +8,11 @@
   },
   "main": "index.html",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "dist": "cross-env NODE_ENV=production node build/webpack.dist.js",
+    "dev": "cross-env NODE_ENV=development node build/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
-  "keywords": [
-    "camomile",
-    "ui"
-  ],
+  "keywords": ["camomile", "ui"],
   "author": {
     "name": "François Romain",
     "email": "francoisromain@gmail.com",
@@ -22,27 +20,30 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.39",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.39",
-    "@babel/preset-env": "^7.0.0-beta.39",
-    "@camomile/camomile-ui": "^0.1.11",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@camomile/camomile-ui": "^0.1.16",
     "babel-loader": "^8.0.0-beta.0",
     "cross-env": "^5.1.3",
-    "css-loader": "^0.28.9",
-    "file-loader": "^1.1.6",
-    "uglifyjs-webpack-plugin": "^1.1.8",
+    "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.0.6",
+    "uglifyjs-webpack-plugin": "^1.2.2",
     "vue": "^2.5.13",
     "vue-html-loader": "^1.2.4",
-    "vue-loader": "^14.0.3",
+    "vue-loader": "^14.2.1",
     "vue-template-compiler": "^2.5.13",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0",
+    "webpack-merge": "^4.1.2"
   },
   "browserslist": [
     "Chrome >= 60",
     "Safari >= 10.1",
     "iOS >= 10.3",
-    "Firefox >= 54",
-    "Edge >= 15"
+    "Firefox >= 54"
   ]
 }
