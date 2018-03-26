@@ -9,10 +9,6 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.html$/,
-        loader: 'vue-html-loader'
-      },
-      {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'url-loader',
         query: {
