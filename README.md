@@ -37,7 +37,7 @@ Contains the development version of the app. A local webpack-dev-server with hot
 
 * `index.html`: the main html file, copied to the dist folder at build time.
 * `app.js`: the main javascript file, imported in index.html at build time.
-* `app.vue`: the main vue.js component, bundled with [webpack's vue-loader](https://vue-loader.vuejs.org/en/) and imported in app.js). **This is the only file that needs to be edited to build an application.**
+* `app.vue`: the main vue.js component, bundled with [webpack's vue-loader](https://vue-loader.vuejs.org/en/) and imported in app.js. **This is the only file that needs to be edited to build an application.**
 
 ---
 
@@ -62,7 +62,7 @@ Create an additional `camomile-data` directory, resulting in the following struc
     +-- upload
 ```
 
-Start the server (from the _camomile-ui-boilerplate_ directory):
+Set env variables and start the server (from the _camomile-ui-boilerplate_ directory):
 
 ```bash
 export CMML_DB=../camomile-data/mongodb/files && export CMML_LOGS=../camomile-data/camomile/logs && export CMML_MEDIA=../camomile-data/media && export CMML_UPLOAD=../camomile-data/upload && export CMML_PORT=3000 && export CMML_PASSWORD=roO7p4s5wOrD && docker-compose -f ../camomile-server/docker-compose.dev.yml up --build -d
