@@ -25,19 +25,21 @@ Camomile UI is a component library to create media annotations.
 
 #### /build
 
-Contains the webpack configuration. It should not be necessary to modify it.
+Webpack configuration. It should not be necessary to modify it.
 
 #### /dist
 
-Contains the production application including html, js and css. These files are bundled by webpack whith the command `npm run dist`.
+Production application including html, js and css. These files are bundled by webpack whith the command `npm run dist`.
 
 #### /src
 
-Contains the development version of the app. A local webpack-dev-server with hot reload can be launched with `npm run dev` and visible at `http://localhost:8080`
+Development application. A local webpack-dev-server (with hot reload) can be launched with `npm run dev` and visible at `http://localhost:8080`.
 
-* `index.html`: the main html file, copied to the dist folder at build time.
-* `app.js`: the main javascript file, imported in index.html at build time.
-* `app.vue`: the main vue.js component, bundled with [webpack's vue-loader](https://vue-loader.vuejs.org/en/) and imported in app.js. **This is the only file that needs to be edited to build an application.**
+* `index.html`: main html file, copied to the dist folder at build time.
+* `app.js`: main javascript file, imported in index.html at build time.
+* `app.vue`: main vue.js component, bundled with [vue-loader](https://vue-loader.vuejs.org/en/) and imported in app.js.
+
+**`app.vue` is the only file that needs to be edited to build an application.**
 
 ---
 

@@ -90,7 +90,7 @@ import {
   cmlAnnotationsTimeline,
   cmlAnnotationsEdit,
   cmlAnnotationsZoning
-} from 'camomile-ui'
+} from '@camomile/camomile-ui'
 
 export default {
   name: 'MyApp',

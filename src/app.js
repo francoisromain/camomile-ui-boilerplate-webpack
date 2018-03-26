@@ -3,5 +3,5 @@ import app from './app.vue'
 
 new Vue({
   components: { app },
-  template: '<app/>'
+  render: h => h(app)
 }).$mount('#app')

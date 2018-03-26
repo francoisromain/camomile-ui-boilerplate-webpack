@@ -20,9 +20,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      vue$: 'vue/dist/vue.esm.js',
-      '~': path.resolve(__dirname, '../src/'),
-      'camomile-ui$': '@camomile/camomile-ui/dist/camomile-ui.esm.js'
+      '~': path.resolve(__dirname, '../src/')
     }
   },
   node: {
