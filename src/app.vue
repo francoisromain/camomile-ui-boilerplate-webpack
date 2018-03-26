@@ -70,6 +70,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import {
   cmlApp,
   cmlAdminUsers,
@@ -91,29 +92,32 @@ import {
   cmlAnnotationsEdit,
   cmlAnnotationsZoning
 } from '@camomile/camomile-ui'
+=======
+import camomileUi from '@camomile/camomile-ui'
+>>>>>>> fix: use vue.runtime instead of vue compiler
 
 export default {
   name: 'MyApp',
   components: {
-    cmlApp,
-    cmlAdminUsers,
-    cmlAdminGroups,
-    cmlCorpus,
-    cmlCorpusList,
-    cmlMedias,
-    cmlMediasList,
-    cmlMediasYoutube,
-    cmlMediasVideo,
-    cmlMediasController,
-    cmlLayers,
-    cmlLayersList,
-    cmlLayersAdd,
-    cmlAnnotations,
-    cmlAnnotationsList,
-    cmlAnnotationsButtons,
-    cmlAnnotationsTimeline,
-    cmlAnnotationsEdit,
-    cmlAnnotationsZoning
+    cmlApp: camomileUi.App,
+    cmlAdminUsers: camomileUi.AdminUsers,
+    cmlAdminGroups: camomileUi.AdminGroups,
+    cmlCorpus: camomileUi.Corpus,
+    cmlCorpusList: camomileUi.CorpusList,
+    cmlMedias: camomileUi.Medias,
+    cmlMediasList: camomileUi.MediasList,
+    cmlMediasYoutube: camomileUi.MediasYoutube,
+    cmlMediasVideo: camomileUi.MediasVideo,
+    cmlMediasController: camomileUi.MediasController,
+    cmlLayers: camomileUi.Layers,
+    cmlLayersList: camomileUi.LayersList,
+    cmlLayersAdd: camomileUi.LayersAdd,
+    cmlAnnotations: camomileUi.Annotations,
+    cmlAnnotationsList: camomileUi.AnnotationsList,
+    cmlAnnotationsButtons: camomileUi.AnnotationsButtons,
+    cmlAnnotationsTimeline: camomileUi.AnnotationsTimeline,
+    cmlAnnotationsEdit: camomileUi.AnnotationsEdit,
+    cmlAnnotationsZoning: camomileUi.AnnotationsZoning
   }
 }
 </script>

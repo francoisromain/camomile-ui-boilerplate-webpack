@@ -2,7 +2,9 @@
 
 > A boilerplate for [Camomile-ui](https://github.com/francoisromain/camomile-ui).
 
-Camomile UI is a component library to create media annotations.
+This project requires npm to install dependencies and webpack to compile javascript.
+
+A similar (simpler) project, without webpack and npm is avilable here: [Camomile UI boilerplate simple](https://github.com/francoisromain/camomile-ui-boilerplate-simple).
 
 ---
 
@@ -23,15 +25,15 @@ Camomile UI is a component library to create media annotations.
 +-- .README.md
 ```
 
-#### /build
+### /build
 
 Webpack configuration. It should not be necessary to modify it.
 
-#### /dist
+### /dist
 
 Production application including html, js and css. These files are bundled by webpack whith the command `npm run dist`.
 
-#### /src
+### /src
 
 Development application. A local webpack-dev-server (with hot reload) can be launched with `npm run dev` and visible at `http://localhost:8080`.
 
@@ -43,13 +45,11 @@ Development application. A local webpack-dev-server (with hot reload) can be lau
 
 ---
 
-## Create a local API server
+## Getting started (local dev environment)
 
-Camonile UI is a front end application only and requires a connection to a [Camomile API server](https://github.com/camomile-project/camomile-server).
+1.  Clone this repo on your computer.
 
-For local development, create a Camomile API server in a directory next to this one.
-
-Create an additional `camomile-data` directory, resulting in the following structure:
+2.  Camonile UI is a front end application only and requires a connection to a [Camomile API server](https://github.com/camomile-project/camomile-server). Clone the Camomile API server in a directory next to this one. Create an additional `camomile-data` directory, resulting in the following structure:
 
 ```txt
 .
@@ -70,9 +70,7 @@ Set env variables and start the server (from the _camomile-ui-boilerplate_ direc
 export CMML_DB=../camomile-data/mongodb/files && export CMML_LOGS=../camomile-data/camomile/logs && export CMML_MEDIA=../camomile-data/media && export CMML_UPLOAD=../camomile-data/upload && export CMML_PORT=3000 && export CMML_PASSWORD=roO7p4s5wOrD && docker-compose -f ../camomile-server/docker-compose.dev.yml up --build -d
 ```
 
----
-
-## Npm scripts
+3.  From this repo, start building your interface.
 
 ```bash
 # Install dependencies.
@@ -84,5 +82,3 @@ npm run dev
 # Build for production with minification.
 npm run build
 ```
-
----
