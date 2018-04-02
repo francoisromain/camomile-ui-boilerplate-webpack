@@ -70,31 +70,7 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-import {
-  cmlApp,
-  cmlAdminUsers,
-  cmlAdminGroups,
-  cmlCorpus,
-  cmlCorpusList,
-  cmlMedias,
-  cmlMediasList,
-  cmlMediasYoutube,
-  cmlMediasVideo,
-  cmlMediasController,
-  cmlLayers,
-  cmlLayersList,
-  cmlLayersAdd,
-  cmlAnnotations,
-  cmlAnnotationsList,
-  cmlAnnotationsButtons,
-  cmlAnnotationsTimeline,
-  cmlAnnotationsEdit,
-  cmlAnnotationsZoning
-} from '@camomile/camomile-ui'
-=======
 import camomileUi from '@camomile/camomile-ui'
->>>>>>> fix: use vue.runtime instead of vue compiler
 
 export default {
   name: 'MyApp',
