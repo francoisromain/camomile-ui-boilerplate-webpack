@@ -4,10 +4,10 @@
 
 This project requires:
 
-- [npm](https://www.npmjs.com/package/npm) to install dependencies.
-- [webpack](https://webpack.js.org/) to bundle javascript.
+* [npm](https://www.npmjs.com/package/npm) to install dependencies.
+* [webpack](https://webpack.js.org/) to bundle javascript.
 
-A similar (simpler) project, without webpack and npm is avilable here: [Camomile UI boilerplate simple](https://github.com/francoisromain/camomile-ui-boilerplate-simple).
+A similar (simpler) project, without webpack and npm is available here: [Camomile UI boilerplate simple](https://github.com/francoisromain/camomile-ui-boilerplate-simple).
 
 ---
 
@@ -52,7 +52,7 @@ Development application. A local webpack-dev-server (with hot reload) can be lau
 
 1.  Clone this repo on your computer.
 
-2.  Camonile UI is a front end application only and requires a connection to a [Camomile API server](https://github.com/camomile-project/camomile-server). Clone the Camomile API server in a directory next to this one. Create an additional `camomile-data` directory, resulting in the following structure:
+2.  Camonile UI is a front end application only and requires a connection to a [Camomile API server](https://github.com/camomile-project/camomile-server). Clone the Camomile API server repo in a directory next to this one. Create an additional `camomile-data` directory, resulting in the following structure:
 
 ```txt
 .
@@ -67,7 +67,7 @@ Development application. A local webpack-dev-server (with hot reload) can be lau
     +-- upload
 ```
 
-Set env variables and start the server (from the _camomile-ui-boilerplate_ directory):
+Set the `env` variables and start the server:
 
 ```bash
 export CMML_DB=../camomile-data/mongodb/files && export CMML_LOGS=../camomile-data/camomile/logs && export CMML_MEDIA=../camomile-data/media && export CMML_UPLOAD=../camomile-data/upload && export CMML_PORT=3000 && export CMML_PASSWORD=roO7p4s5wOrD && docker-compose -f ../camomile-server/docker-compose.dev.yml up --build -d
