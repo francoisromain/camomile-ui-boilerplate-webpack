@@ -1,7 +1,7 @@
 {
-  "name": "camomile-ui-boilerplate",
+  "name": "camomile-ui-boilerplate-webpack",
   "version": "0.1.0",
-  "description": "A boilerplate project to use Camomile UI",
+  "description": "A boilerplate project to use Camomile UI with webpack",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/francoisromain/camomile-ui-boilerplate.git"
@@ -14,7 +14,10 @@
   },
   "keywords": [
     "camomile",
-    "ui"
+    "camomile-ui",
+    "ui",
+    "webpack",
+    "vuejs"
   ],
   "author": {
     "name": "François Romain",

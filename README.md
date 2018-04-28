@@ -1,4 +1,4 @@
-# Camomile UI boilerplate
+# Camomile UI boilerplate (with webpack)
 
 > A boilerplate for [Camomile-ui](https://github.com/francoisromain/camomile-ui).
 
@@ -7,7 +7,7 @@ This project requires:
 * [npm](https://www.npmjs.com/package/npm) to install dependencies.
 * [webpack](https://webpack.js.org/) to bundle javascript.
 
-A similar (simpler) project, without webpack and npm is available here: [Camomile UI boilerplate simple](https://github.com/francoisromain/camomile-ui-boilerplate-simple).
+A similar (simpler) project, without webpack and npm is available here: [Camomile UI boilerplate](https://github.com/francoisromain/camomile-ui-boilerplate).
 
 ---
 
