@@ -4,6 +4,7 @@ const merge = require('webpack-merge')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
 const webpackConfigBase = require('./webpack.config.base')
 
 const webpackConfigDist = {
@@ -53,6 +54,7 @@ const webpackConfigDist = {
       }
     }),
     new webpack.ExtendedAPIPlugin(),
+    new VueLoaderPlugin(),
     new ExtractTextPlugin({
       filename: 'styles.[hash].css',
       allChunks: true

@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
 const webpackConfigBase = require('./webpack.config.base')
 
 const webpackConfigDev = {
@@ -50,6 +51,7 @@ const webpackConfigDev = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
+    new VueLoaderPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: true
